@@ -1,0 +1,22 @@
+#titulo{
+    font-size: 40px;
+    color: blue;
+}
+
+.animar-imagem {
+    width: 100px; /* Tamanho da sua imagem */
+    position: relative;
+    
+    /* Aplica a animação: nome, duração, suavização, repetição infinita e estilo alternado (vai e volta) */
+    animation: moverLados 3s ease-in-out infinite alternate;
+}
+
+/* Define os passos da animação */
+@keyframes moverLados {
+    0% {
+        left: 0; /* Começa na esquerda */
+    }
+    100% {
+        left: calc(100% - 100px); /* Vai para a direita (subtrai o tamanho da imagem) */
+    }
+}
